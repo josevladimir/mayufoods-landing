@@ -1,0 +1,54 @@
+header{
+    position: sticky;
+    top: 0px;
+}
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    width: auto;
+}
+header nav.none{
+    display: flex;
+    justify-content: end;
+}
+header nav li{
+    margin: 0px;
+}
+
+#main-section div a{
+    margin-right: 16px;
+}
+
+#what-is-section > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    vertical-align: middle;
+}
+#what-is-section .wrapper > div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+#features-section .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#buy-one-click-section{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: 3fr 2fr;
+}
+#buy-one-click-section img{
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#for-restaurants-section .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
