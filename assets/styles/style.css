@@ -44,6 +44,13 @@ p{
     line-height: 2rem;
 }
 /*-- General Classes --*/
+.image-container{
+    overflow-y: hidden;
+}
+.image-container img{
+    height: 100%;
+    object-fit: cover;
+}
 .features-card{
     text-align: center;
     margin: 50px auto;
@@ -57,6 +64,10 @@ p{
 }
 .landing-section{
     min-height: 100vh;
+}
+.landing-section.no-full-height{
+    min-height: auto;
+    height: auto;
 }
 .main-purple-button{
     border: 2px solid #5C13E1;
@@ -105,13 +116,19 @@ p{
     margin: auto;
     padding: 16px;
 }
+.wrapper.no-full-height{
+    height: auto;
+}
 .wrapper.flex{
     display: flex;
 }
 /*-- Header --*/
 header{
-    height: 54px;
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 100%;
+    position: absolute;
 }
 header .wrapper{
     padding-top: 0px;
@@ -119,6 +136,8 @@ header .wrapper{
 }
 header .wrapper img{
     height: 100%;
+    width: auto;
+    margin: auto;
 }
 header nav{
     display: flex;
@@ -147,6 +166,8 @@ header nav ul li a{
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 #main-section p{
     margin-bottom: 1.5rem;
@@ -158,6 +179,7 @@ header nav ul li a{
 }
 /*-- Buy one click Section --*/
 #buy-one-click-section{
+    display: grid;
     background-color: #2A0076;
 }
 #buy-one-click-section h2,
@@ -173,10 +195,17 @@ header nav ul li a{
 /*-- Buy now section --*/
 #buy-now-section{
     background-color: #F9F6FF;
+    display: grid;
+}
+#buy-now-section .wrapper{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
 }
 /*-- Contact Section --*/
 #contact-section{
     background-color: #F9F6FF;
+    display: grid;
 }
 #contact-section > .wrapper{
     height: 100%;
@@ -215,6 +244,17 @@ header nav ul li a{
 footer{
     background-color: #2A0076;
     color: white;
+}
+footer img {
+    width: 50%;
+    margin-left: 1.6rem;
+    margin-top: 1.6rem;
+}
+#footer-text{
+    margin: 1.6rem 1.6rem 0px;
+    color: rgba(255,255,255,.8);
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid rgba(255,255,255,.12);
 }
 footer a{
     color: white;
