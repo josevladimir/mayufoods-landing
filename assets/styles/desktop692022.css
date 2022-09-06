@@ -1,0 +1,191 @@
+header{
+    position: absolute;
+    top: 0px;
+    height: 100px;
+}
+header .wrapper{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .wrapper img{
+    margin: 0px;
+    width: auto;
+}
+header nav.none{
+    display: flex;
+    justify-content: end;
+}
+header nav li{
+    margin: 0px;
+}
+header nav li a{
+    font-weight: bold;
+    color: black;
+}
+header nav li a:hover{
+    color: #5C13E1;
+    transition: .25s all linear;
+}
+header #contact-button{
+    display: block;
+    background-color: #5C13E1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+#main-section{
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+#main-section .wrapper,
+#what-is-section .wrapper,
+#for-restaurants-section .wrapper,
+#for-providers-section .wrapper{
+    width: 100%;
+    max-width: 1200px;
+}
+#main-section .wrapper p{
+    font-size: 1.6rem;
+}
+#main-section .wrapper h1{
+    font-size: 4.5rem;
+}
+#main-section div a{
+    margin-right: 16px;
+}
+#main-section .botonera{
+    display: flex;
+}
+
+
+#what-is-section > div{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    vertical-align: middle;
+}
+#what-is-section .wrapper > div{
+    display: flex;
+    align-items: center;
+}
+
+#features-section .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#buy-one-click-section{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: 3fr 2fr;
+}
+#buy-one-click-section h2{
+    font-size: 4.5rem;
+}
+#buy-one-click-section img{
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#for-restaurants-section,
+#for-providers-section{
+    height: 75vh;
+}
+
+#for-restaurants-section h2,
+#for-providers-section h2{
+    font-size: 4.5rem;
+}
+
+#for-restaurants-section .wrapper{
+    display: grid;
+    align-items: center;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#for-providers-section .wrapper{
+    display: grid;
+    gap: 40px;
+    align-items: center;
+    grid-template-areas: 'image text';
+}
+
+.image{
+    grid-area: image;
+}
+.text{
+    grid-area: text;
+}
+
+#buy-now-section{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns:repeat(2,1fr);
+}
+#buy-now-section h2{
+    font-size: 4.5rem;
+}
+#buy-now-section,
+#buy-now-section .wrapper{
+    height: 75vh;
+}
+#buy-now-section.landing-section{
+    min-height: 75vh;
+}
+#buy-now-section img{
+    height: 75vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#contact-section{
+    display: grid;
+    object-fit: cover;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 'image text';
+}
+#contact-section .wrapper{
+    position: absolute;
+    left: calc(50% - 100px);
+    width: calc(50%);
+}
+#contact-section .wrapper form{
+    border-radius: 10px;
+    padding: 3.2rem;
+    width: 100%;
+}
+
+footer img{
+    height: 50px;
+    width: auto;
+    margin: 1.6rem;
+}
+
+#footer-menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 16px;
+    margin: auto;
+}
+#footer-text{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+}
+#footer-branding{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px auto 3.2rem;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}

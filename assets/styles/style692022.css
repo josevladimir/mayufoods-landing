@@ -124,7 +124,7 @@ p{
 }
 /*-- Header --*/
 header{
-    height: 60px;
+    height: 100px;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
@@ -135,9 +135,9 @@ header .wrapper{
     padding-bottom: 0px;
 }
 header .wrapper img{
-    height: 100%;
-    width: auto;
-    margin: auto;
+    margin-top: 40px;
+    max-height: 100%;
+    width: calc(50% + 16px);
 }
 header nav{
     display: flex;
@@ -187,7 +187,7 @@ header nav ul li a{
     color: #fff;
 }
 #buy-one-click-section .wrapper{
-    align-items: end;
+    align-items: center;
     vertical-align: baseline;
     display: flex;
     min-height: 50vh;
@@ -199,7 +199,7 @@ header nav ul li a{
 }
 #buy-now-section .wrapper{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     flex-direction: column;
 }
 /*-- Contact Section --*/
@@ -213,6 +213,8 @@ header nav ul li a{
 #contact-section > .wrapper > form{
     background-color: #fff;
     padding: 16px;
+    margin: 1.6rem 0px;
+    border-radius: 5.5px;
 }
 #contact-section > .wrapper > form > div > label,
 #contact-section > .wrapper > form > div > input {
