@@ -23,6 +23,8 @@ header nav li{
 }
 header nav li a{
     font-weight: bold;
+    font-size: 1.6rem;
+    margin: 0px 15px;
     color: black;
 }
 header nav li a:hover{
@@ -39,7 +41,8 @@ header #contact-button{
 #main-section{
     background-size: cover;
     background-position: top;
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 150px;
 }
 #main-section .wrapper,
 #what-is-section .wrapper,
@@ -77,8 +80,8 @@ header #contact-button{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-
 #buy-one-click-section{
+    height: 400px;
     display: grid;
     object-fit: cover;
     grid-template-columns: 3fr 2fr;
@@ -94,7 +97,8 @@ header #contact-button{
 
 #for-restaurants-section,
 #for-providers-section{
-    height: 75vh;
+    min-height: 75vh;
+    padding: 25px 0px;
 }
 
 #for-restaurants-section h2,
@@ -133,32 +137,34 @@ header #contact-button{
 }
 #buy-now-section,
 #buy-now-section .wrapper{
-    height: 75vh;
-}
-#buy-now-section.landing-section{
-    min-height: 75vh;
+    height: 500px;
 }
 #buy-now-section img{
-    height: 75vh;
+    min-height: 75vh;
     object-fit: cover;
     overflow: hidden;
 }
 
 #contact-section{
     display: grid;
-    object-fit: cover;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 'image text';
+    height: 600px;
 }
 #contact-section .wrapper{
+    height: auto;
     position: absolute;
     left: calc(50% - 100px);
-    width: calc(50%);
+    width: 50%;
 }
 #contact-section .wrapper form{
     border-radius: 10px;
     padding: 3.2rem;
     width: 100%;
+}
+#contact-section .image-container img{
+    object-fit: cover;
+    height: 100%;
 }
 
 footer img{
@@ -188,4 +194,8 @@ footer img{
     max-width: 1200px;
     margin: 0px auto 3.2rem;
     border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.landing-section{
+    min-height: auto;
 }
