@@ -152,6 +152,19 @@ header nav ul{
 header nav ul li{
     list-style: none;
 }
+
+.orejitas{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    right: calc(50% - 25px);
+    z-index: 100000;
+
+}
+.relative{
+    position: relative;
+}
 /*-- Main Section --*/
 #main-section{
     background-color: #f4f4f4;
